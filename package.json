@@ -1,0 +1,30 @@
+{
+  "name": "heroku-node-sample-josephine",
+  "version": "1.0.0",
+  "description": "A simple Node app deployed to heroku.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josephine-pn3ed/heroku-node-sample-josephine.git"
+  },
+  "author": "Josephine Morre",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josephine-pn3ed/heroku-node-sample-josephine/issues"
+  },
+  "homepage": "https://github.com/josephine-pn3ed/heroku-node-sample-josephine#readme",
+  "keywords": [
+    "node",
+    "heroku"
+  ],
+  "engines": {
+    "node": "10.16"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  }
+}

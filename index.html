@@ -1,0 +1,78 @@
+<html>
+<head>
+  <title>Socket.IO Chat</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="header">Conversation</div>
+<br>
+<div style="width: 60%" class="R">
+  <div class="modal fade" id="modalLoginAvatar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog cascading-modal modal-avatar modal-sm" role="document">
+    <!--Content-->
+    <div class="modal-content">
+
+      <!--Header-->
+      <div class="modal-header">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoghIkegWjq2JwAI57ES7XoQycJxWE8pgeTeddi8fbYZqo5hdpLQ" style="width: 280px">
+      </div>
+      <!--Body-->
+      <div class="modal-body text-center mb-1">
+
+        <div class="md-form ml-0 mr-0">
+          <input type="text" id="form29" value="" class="form-control form-control-sm validate ml-0">
+          <label for="form29" class="ml-0">Enter username</label>
+        </div>
+
+        <div class="text-center mt-4">
+          <input type="button" value="Connect" id="submit-btn" class="btn btn-success mt-1" data-dismiss="modal"><i class="fas fa-sign-in ml-1"></i>
+        </div>
+      </div>
+
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+<!--Modal: Login with Avatar Form-->
+
+<div class="join text-center">
+  <a href="" class="btn btn-primary btn-rounded" data-toggle="modal" data-target="#modalLoginAvatar"><span id="join-id">Join Group Chat</span></a>
+</div>
+<div id="disconnect-btn" class="text-center" style="display: none">
+  <button class="btn btn-danger btn-rounded">Disconnect</button>
+</div>
+<div class="container">
+</div> 
+<div id="typing-area" style="display: none" class="Area">
+  <div class="text L textL" id="typing"></div>
+</div>
+<div>
+    <center>
+      <form action="">
+      <textarea id="m" autocomplete="off" placeholder="Write a message..."></textarea>
+      <br/><br/>
+      <button class="btn btn-success" id="send-btn"/>SEND</button>
+      <br/>
+    </form>
+    </center>
+  </div>
+</div>
+<div style="width: 20%; margin-left: 100px" class="card L">
+    <div class="card-body">
+    <input type="text" id="active" class="btn btn-rounded btn-primary" value="Active User (0)" readonly="">
+    
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+
